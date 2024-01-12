@@ -33,7 +33,7 @@ body {
   position: relative;
   overflow: hidden;
   height: 95vh;
-  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(1, 1, 1, 0.7) 99.94%), url(../img/backround.jpg) center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/backround.jpg) center/cover no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 .header__logo {
@@ -85,11 +85,11 @@ body {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
+  display: inline-block;
   color: #777777;
-  background: white;
+  background: #ffffff;
   padding: 1.5rem 4rem;
   border-radius: 5rem;
-  display: inline-block;
   transition: all 0.3s;
   position: relative;
   font-size: 2rem;
@@ -105,7 +105,7 @@ body {
 }
 .btn:active {
   transform: translateY(-2px);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 }
 .btn::after {
   content: "";
