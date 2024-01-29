@@ -1,15 +1,20 @@
+// Переменные,код. Позволят быстро редактировать все элементы на всем сайта
 $color-gray: #777777
 $color-brow-light: #BA8554
 $color-brow-darck: #A14F03
 $color-black: #000000
 $color-white: #ffffff
 $box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3)
-
+// Миксины-это возможность делать шаблоны код и переиспользовать его.Возможно добавлять
 @mixin style-link($color)
    text-transform: uppercase
    text-decoration: none
    display: inline-block
    color: $color
+// Функции,позволяют создавать операции
+@function multiply ($a, $b)
+   @return $a* $b
+
 @font-face
    font-family: 'Lato Semibold' sans-serif
    font-weight: 600
@@ -19,6 +24,8 @@ $box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3)
    font-display: swap
 html
    font-size: 62.5%
+// Шаблоны.Позволяют создавать библиотеки готового sass кода, который не компилируется в итоговый css файл, если мы не используем шаблон
+%shablons
 *  ::after, ::before
    margin: 0
    padding: 0
