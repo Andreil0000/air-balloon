@@ -1,10 +1,37 @@
-@font-face {
-  font-family: "Lato Semibold" sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  src: local("Lato Semibold");
-  src: url(../fonts/Lato/Semibold.woff2) format("woff2");
-  font-display: swap;
+@keyframes BtnToup {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+@keyframes lefToriht {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  80% {
+    transform: translate(2rem);
+  }
+  100% {
+    opacity: 2;
+    transform: translate(0px);
+  }
+}
+@keyframes RighiTolefr {
+  0% {
+    opacity: 0;
+    transform: translate(10rem);
+  }
+  80% {
+    transform: translate(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
 }
 html {
   font-size: 62.5%;
@@ -17,39 +44,27 @@ html {
 }
 
 body {
-  color: #777777;
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
   padding: 5rem;
   background-color: white;
-  font-family: "Lato", sans-serif;
 }
 
 .container {
   background-color: #f7f7f7;
 }
 
-.header {
-  position: relative;
-  overflow: hidden;
-  height: 95vh;
-  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/backround.jpg) center/cover no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+@font-face {
+  font-family: "Lato Semibold" sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  src: local("Lato Semibold");
+  src: url(../fonts/Lato/Semibold.woff2) format("woff2");
+  font-display: swap;
 }
-.header__logo {
-  position: absolute;
-  left: 5rem;
-  top: 5rem;
-  height: 7rem;
-  width: 5.6rem;
-}
-.header__box {
-  position: relative;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
+body {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-family: "Lato", sans-serif;
+  color: #777777;
 }
 
 .title-first {
@@ -125,38 +140,25 @@ body {
   animation-fill-mode: backwards;
 }
 
-@keyframes BtnToup {
-  0% {
-    opacity: 0;
-    transform: translateY(5rem);
-  }
-  100% {
-    transform: translate(0px);
-  }
+.header {
+  position: relative;
+  overflow: hidden;
+  height: 95vh;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/backround.jpg) center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
-@keyframes lefToriht {
-  0% {
-    opacity: 0;
-    transform: translate(-10rem);
-  }
-  80% {
-    transform: translate(2rem);
-  }
-  100% {
-    opacity: 2;
-    transform: translate(0px);
-  }
+.header__logo {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  height: 7rem;
+  width: 5.6rem;
 }
-@keyframes RighiTolefr {
-  0% {
-    opacity: 0;
-    transform: translate(10rem);
-  }
-  80% {
-    transform: translate(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0px);
-  }
+.header__box {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }/*# sourceMappingURL=stails.css.map */
