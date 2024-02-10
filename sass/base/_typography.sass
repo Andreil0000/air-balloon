@@ -7,7 +7,7 @@
    font-display: swap
 
 body
-   font-size: 1.6rem
+   font-size: $font-size-paragraph
    letter-spacing: .2rem
    font-family: 'Lato', sans-serif
    color: $color-gray
@@ -38,3 +38,37 @@ body
       animation-timing-function: ease
       backface-visibility: hidden
       margin-bottom: 5rem
+
+.title-secondary
+      font-size: $font-size-paragraph-h2
+      letter-spacing: 1rem
+      text-transform: uppercase
+      font-weight: 800
+      display: inline-block
+      background: linear-gradient(90deg, rgba($color-brow-light, 0.70) 0.03%, rgba($color-brow-darck, 0.7) 99.94%) 
+      -webkit-background-clip: text
+      color: transparent
+      backface-visibility: hidden
+      transition: all .4s
+      &:hover
+         transform: skew(2deg) skew(15deg) scale(1.1)
+         text-shadow: $shadow-h2
+
+.title-trind 
+   font-size: $font-size-paragraph-h3
+   letter-spacing: .2rem
+   text-transform: uppercase
+   font-weight: 700
+
+.paragraf
+   font-size: $font-size-paragraph
+   letter-spacing: .2rem
+   text-transform: uppercase
+   font-weight: 400
+   line-height: 140%
+
+
+      
+
+
+
